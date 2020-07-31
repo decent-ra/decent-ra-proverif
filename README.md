@@ -24,6 +24,7 @@ The next figure shows that the honest process is splited into an infinite replic
 	* control all message channels
 	* create their own Decent Apps or Decent Servers, and access their private keys
 	* access the private keys held by revoked Decent Apps
+	* provide any Auth List (malicious or legitimate) to any Decent App, Verifier, or Revoker, except the one Decent App that represents the client (or honest App)
 
 ## Attacker Processes
 
