@@ -1,0 +1,149 @@
+(***************************** library Expansions ******************************)
+
+	(***************************** CV_Common_Declarations ******************************)
+
+expand CV_Common_Declarations(bitstringbot, bottom, emptyStr, keyseed, cleartext, ciphertext).
+
+	(***************************** CV_DSA ******************************)
+
+expand CV_det_signature_types(spkey, sskey, signinput, signature, StrToSignin).
+expand CV_det_signature_args(keyseed, spkey, sskey, signinput, signature, sskgen, spkgen, sign, checksign, getmess, getkey).
+
+	(***************************** CV_RSA ******************************)
+
+expand CV_public_key_enc_types(pkey, skey, aenc_seed).
+expand CV_public_key_enc_args(keyseed, bitstringbot, bottom, pkey, skey, cleartext, ciphertext, aenc_seed, skgen, pkgen, aenc, aenc_r, adec, ainjbot, aZ).
+
+	(***************************** CV_AEAD ******************************)
+
+expand CV_keygen_types(key).
+expand CV_keygen_args(keyseed, key, kgen).
+
+expand CV_AEAD_types(key, add_data, nonce, zero_nonce, dummy_key, IncrNonce).
+expand CV_AEAD_args(key, bitstringbot, bottom, bitstring, ciphertext, bitstring, nonce, enc, enc, dec, sinjbot, sZ, dummy_key).
+
+	(***************************** DecentRA_EnclaveBas ******************************)
+
+expand Decent_Enclave_Basics(spkey, enclaveProg, enclaveHash, HashEnclave, SPKey2Bitstr, EventSubType).
+
+expand Decent_ECDH_Key(key, ecskey, ecpkey, ecpkgen, signinput, bitstring, ciphertext, bitstring, nonce, enc,
+	DiHeValG, DiHeExp, EcDiHeToKey, EcDiHeKeyGen, EcPKeyToSignin,
+	dummy_ecpkey, GetEcPKeyA, GetEcPKeyB).
+
+	(***************************** DecentRA_LocAtt ******************************)
+
+expand Decent_Local_Attestation(
+	(** CV_ macros  **) keyseed, sskey, spkey, sign, signinput, signature,
+	(** Encl Basics **) enclaveProg, enclaveHash, HashEnclave,
+	(** ECHD Key    **) ecpkey,
+	(** This. Rep   **) LocAttRep, GetLocAttSignedRep).
+
+	(***************************** DecentRA_IasRep ******************************)
+
+expand Decent_IAS_Report(
+	(** CV_ macros  **) keyseed, sskey, spkey, sskgen, spkgen, sign, getmess, checksign, signinput, signature,
+	(** Encl Basics **) enclaveProg, enclaveHash, HashEnclave,
+	(** This. Vars  **) iasRepKeySeed, encPrvsKeySeed,
+	(** This. Quote **) EnclaveQuoteSignin, GetEnclaveSignedQuote_intr, GetEnclaveSignedQuote,
+	(** This. Rep   **) IasRep2Signin, GetSignedIasRep_intr, GetSignedIasRep,
+	(** This. Proc  **) IasIssueRep, IasProc_intr).
+
+	(***************************** DecentRA_AuthList ******************************)
+
+expand Decent_Auth_List(enclaveHash, AuthListItem, AuthListNewItem, AuthList, AuthListInsert, AuthListEmpty, AuthListIsIn, AuthListToStr).
+expand Decent_Recv_List(enclaveHash, RecvListItem, RecvListNewItem, RecvList, RecvListInsert, RecvListEmpty, RecvListIsIn, RecvListToStr).
+
+	(***************************** DecentRA_DecentSvr ******************************)
+
+expand Decent_Decent_Server(
+	(** CV_ macros    **) keyseed, sskey, spkey, sskgen, spkgen, getmess, sign, checksign, signinput, signature, emptyStr, key, bitstring, ciphertext, nonce, enc, dec, sinjbot, bottom, zero_nonce, IncrNonce,
+	(** Encl Basics   **) enclaveProg, enclaveHash, HashEnclave, SPKey2Bitstr,
+	(** ECHD Key      **) ecskey, ecpkey, ecpkgen, EcDiHeKeyGen,
+	(** LocAtt Rep    **) LocAttRep, GetLocAttSignedRep,
+	(** Ias Rep       **) encPrvsKeySeed, GetEnclaveSignedQuote_intr, IasRep2Signin,
+	(** Lists         **) AuthList, AuthListNewItem, AuthListIsIn,
+	(** This. Vars    **) enclaveDecentSvr, decentSvrName,
+	(** This. SvrCert **) DecentSvrSignin, GetDecentSvrCert, VrfyDecentSvrCert_intr,
+	(** This. AppCert **) DecentAppSignin, GetDecentAppCert, VrfyDecentAppCertChain_intr,
+	(** This. SvrProc **) DecentSvrIssueCert, DecentSvrGotIasRep, DecentSvrProc_intr, DecentSvrProcP2_intr).
+
+	(***************************** DecentRA_DecentApp ******************************)
+
+expand Decent_Decent_App(
+	(** CV_ macros    **) keyseed, sskey, spkey, sskgen, spkgen, getmess, sign, checksign, signinput, signature, StrToSignin, emptyStr, key, cleartext, ciphertext, nonce, enc, dec, sinjbot, bottom, zero_nonce, IncrNonce,
+	(** Encl Basics   **) enclaveProg, enclaveHash, SPKey2Bitstr, EventSubType,
+	(** ECHD Key      **) ecskey, ecpkey, ecpkgen, EcDiHeKeyGen, EcPKeyToSignin,
+	(** LocAtt Rep    **) LocAttRep, GetLocAttSignedRep,
+	(** Decent Svr    **) DecentSvrSignin, DecentAppSignin, VrfyDecentSvrCert_intr, VrfyDecentAppCertChain_intr,
+	(** Lists         **) AuthList,
+	(** This.Event    **) DecentAppAccPeer, DecentAppGotCert, DecentAppGotMsg, DecentAppGotRels, DecentVrfyIssueCert,
+	(** This.VrfyProc **) DecentVrfy_Proc_intr, DecentVrfy_ProcP2_intr,
+	(** This.RecvProc **) DecentRevc_Proc_intr, DecentRevc_ProcP2_intr,
+	(** This.AppProc1 **) DecentApp_X_X_Svr_ProcP4_intr, DecentApp_X_Auls_Svr_ProcP3_intr, DecentApp_Auls_Auls_Svr_ProcP2_intr, DecentApp_Auls_Auls_Svr_Proc_intr,
+	(** This.AppProc2 **) DecentApp_X_Vrfy_Svr_ProcP3_intr, DecentApp_Auls_Vrfy_Svr_ProcP2_intr, DecentApp_Auls_Vrfy_Svr_Proc_intr,
+	(** This.AppProc3 **) DecentApp_Vrfy_Auls_Svr_ProcP3_intr, DecentApp_Vrfy_Auls_Svr_ProcP2_intr, DecentApp_Vrfy_Auls_Svr_Proc_intr,
+	(** This.AppProc4 **) DecentApp_Vrfy_Vrfy_Svr_ProcP3_intr, DecentApp_Vrfy_Vrfy_Svr_ProcP2_intr, DecentApp_Vrfy_Vrfy_Svr_Proc_intr,
+	(** This.AppProc5 **) DecentApp_X_X_Clt_ProcP4_intr, DecentApp_X_Auls_Clt_ProcP3_intr, DecentApp_Auls_Auls_Clt_ProcP2_intr, DecentApp_Auls_Auls_Clt_Proc_intr,
+	(** This.AppProc6 **) DecentApp_X_Vrfy_Clt_ProcP3_intr_intr, DecentApp_Auls_Vrfy_Clt_ProcP2_intr, DecentApp_Auls_Vrfy_Clt_Proc_intr,
+	(** This.AppProc7 **) DecentApp_Vrfy_Auls_Clt_ProcP3_intr, DecentApp_Vrfy_Auls_Clt_ProcP2_intr, DecentApp_Vrfy_Auls_Clt_Proc_intr,
+	(** This.AppProc8 **) DecentApp_Vrfy_Vrfy_Clt_ProcP3_intr, DecentApp_Vrfy_Vrfy_Clt_ProcP2_intr, DecentApp_Vrfy_Vrfy_Clt_Proc_intr
+	).
+
+(*============================================================================*)
+(******************************* For this process *****************************)
+
+(* Settings:*)
+set attacker = active.
+
+(* Channels: *)
+free svrIasACh : channel.
+free appSvrACh : channel.
+
+(******************************* Secrecy assumptions *****************************)
+
+not attacker(iasRepKeySeed).
+not attacker(encPrvsKeySeed).
+not attacker(new repKeySeed).
+not attacker(new svrKeySeed).
+
+not attacker(sskgen(iasRepKeySeed)).
+not attacker(sskgen(encPrvsKeySeed)).
+not attacker(sskgen(new repKeySeed)).
+not attacker(sskgen(new svrKeySeed)).
+
+(******************************* Queries *****************************)
+
+(* Query 3: event IasIssueRep(iasRepKeySeed, true, HashEnclave(enclaveDecentSvr), SPKey2Bitstr(svrSPKey)) is reachable. *)
+query let svrSPKey = spkgen(new svrKeySeed) in
+	event(IasIssueRep(iasRepKeySeed, true, HashEnclave(enclaveDecentSvr), SPKey2Bitstr(svrSPKey))).
+
+(* Query 4: Query is true if and only if, for all executions of the protocol,
+if the event IasIssueRep(iasRepKeySeed, true, HashEnclave(anyEnclave), SPKey2Bitstr(anySPKey))
+has been executed, then anyEnclave = enclaveDecentSvr and anySPKey = svrSPKey *)
+query anyEnclave : enclaveProg, anySPKey : spkey;
+	let svrSPKey = spkgen(new svrKeySeed) in
+	event(IasIssueRep(iasRepKeySeed, true, HashEnclave(anyEnclave), SPKey2Bitstr(anySPKey))) ==>
+	(anyEnclave = enclaveDecentSvr) && (anySPKey = svrSPKey).
+
+(* Query 1: event DecentSvrGotIasRep(enclaveDecentSvr, spkgen(iasRepKeySeed)) is reachable. *)
+query event(DecentSvrGotIasRep(enclaveDecentSvr, spkgen(iasRepKeySeed))).
+
+(* Query 2: Query is true if and only if, for all executions of the protocol,
+	if the event DecentSvrGotIasRep(anyEnclave, spkgen(anyIasRepKeySeed))
+	has been executed, then anyEnclave = enclaveDecentSvr and iasRepKeySeed = anyIasRepKeySeed *)
+query anyEnclave : enclaveProg, anyIasRepKeySeed : keyseed;
+	event(DecentSvrGotIasRep(anyEnclave, spkgen(anyIasRepKeySeed))) ==>
+	(anyEnclave = enclaveDecentSvr) && (anyIasRepKeySeed = iasRepKeySeed).
+
+(******************************* Honest Process *****************************)
+
+process
+	let pub_iasRepSPKey : spkey = spkgen(iasRepKeySeed) in
+	let pub_encPrvsKey : spkey = spkgen(encPrvsKeySeed) in
+
+	(* IAS Server A *) (!IasProc_intr(svrIasACh, iasRepKeySeed, pub_encPrvsKey))
+	|
+	(* Decent Svr A *) (!
+		new svrKeySeed : keyseed;
+		new repKeySeed : keyseed;
+		(DecentSvrProc_intr(enclaveDecentSvr, svrKeySeed, svrIasACh, appSvrACh, pub_iasRepSPKey, encPrvsKeySeed, repKeySeed)))

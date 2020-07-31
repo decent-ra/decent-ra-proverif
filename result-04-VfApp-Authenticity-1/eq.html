@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+		      <html>
+		    <head>
+		    <title>ProVerif: equations and destructors</title>
+		    <link rel="stylesheet" href="cssproverif.css">
+									   </head>
+									 <body>
+									 <H1>Equations</H1>
+<H2>Linear part</H2>
+Initial equations:
+<ul>
+
+<li><span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x</span>),<span class="var">@13_y</span>) <span class="conn">=</span> <span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_y</span>),<span class="var">@13_x</span>)
+</ul>
+Completed equations:
+<ul>
+
+<li><span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x</span>),<span class="var">@13_y</span>) <span class="conn">=</span> <span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_y</span>),<span class="var">@13_x</span>)
+</ul>
+<H2>Convergent part</H2>
+Initial equations:
+<ul>
+
+</ul>
+Completed equations:
+<ul>
+
+</ul>
+<H1>Completed destructors</H2>
+(<span class="fun">fail-any</span> <span class="fun">||</span> <span class="var">@mayfail_287</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+(<span class="var">v_285</span> <span class="fun">||</span> <span class="var">@mayfail_286</span>) <span class="conn">=&gt;</span> <span class="var">@mayfail_286</span> if <span class="var">v_285</span> <span class="conn">&lt;&gt;</span> <span class="fun">true</span><br>
+(<span class="fun">true</span> <span class="fun">||</span> <span class="var">@mayfail_284</span>) <span class="conn">=&gt;</span> <span class="fun">true</span><br>
+<br><span class="fun">not</span>(<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">not</span>(<span class="var">v_288</span>) <span class="conn">=&gt;</span> <span class="fun">true</span> if <span class="var">v_288</span> <span class="conn">&lt;&gt;</span> <span class="fun">true</span><br>
+<span class="fun">not</span>(<span class="fun">true</span>) <span class="conn">=&gt;</span> <span class="fun">false</span><br>
+<br><span class="fun">getmess</span>(<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">getmess</span>(<span class="var">v_291</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span> if (forall <span class="fun">@gen9</span>,<span class="fun">@gen8</span>. <span class="var">v_291</span> <span class="conn">&lt;&gt;</span> <span class="fun">sign</span>(<span class="fun">@gen8</span>,<span class="fun">sskgen</span>(<span class="fun">@gen9</span>)))<br>
+<span class="fun">getmess</span>(<span class="fun">sign</span>(<span class="var">@3_m_289</span>,<span class="fun">sskgen</span>(<span class="var">@3_r_290</span>))) <span class="conn">=&gt;</span> <span class="var">@3_m_289</span><br>
+<br><span class="fun">getkey</span>(<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">getkey</span>(<span class="var">v_294</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span> if (forall <span class="fun">@gen11</span>,<span class="fun">@gen10</span>. <span class="var">v_294</span> <span class="conn">&lt;&gt;</span> <span class="fun">sign</span>(<span class="fun">@gen10</span>,<span class="fun">sskgen</span>(<span class="fun">@gen11</span>)))<br>
+<span class="fun">getkey</span>(<span class="fun">sign</span>(<span class="var">@3_m_293</span>,<span class="fun">sskgen</span>(<span class="var">@3_r_292</span>))) <span class="conn">=&gt;</span> <span class="fun">spkgen</span>(<span class="var">@3_r_292</span>)<br>
+<br><span class="fun">dec</span>(<span class="fun">fail-any</span>,<span class="var">@mayfail_309</span>,<span class="var">@mayfail_310</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">dec</span>(<span class="var">v_307</span>,<span class="var">@mayfail_308</span>,<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">dec</span>(<span class="var">v_305</span>,<span class="fun">fail-any</span>,<span class="var">v_306</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">dec</span>(<span class="var">@9_c_301</span>,<span class="var">@9_d_300</span>,<span class="var">@9_k_299</span>) <span class="conn">=&gt;</span> <span class="fun">bottom</span> if (forall <span class="fun">@gen31</span>,<span class="fun">@gen28</span>. <span class="var">@9_c_301</span> <span class="conn">&lt;&gt;</span> <span class="fun">enc_r</span>(<span class="fun">@gen28</span>,<span class="var">@9_d_300</span>,<span class="var">@9_k_299</span>,<span class="fun">@gen31</span>))<br>
+<span class="fun">dec</span>(<span class="fun">enc_r</span>(<span class="var">@9_m_295</span>,<span class="var">@9_d_296</span>,<span class="var">@9_k_297</span>,<span class="var">@9_r_298</span>),<span class="var">@9_d_296</span>,<span class="var">@9_k_297</span>) <span class="conn">=&gt;</span> <span class="fun">sinjbot</span>(<span class="var">@9_m_295</span>)<br>
+<br><span class="fun">checksign</span>(<span class="fun">fail-any</span>,<span class="var">@mayfail_323</span>,<span class="var">@mayfail_324</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">checksign</span>(<span class="var">v_321</span>,<span class="var">@mayfail_322</span>,<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">checksign</span>(<span class="var">v_319</span>,<span class="fun">fail-any</span>,<span class="var">v_320</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">checksign</span>(<span class="var">@3_m_315</span>,<span class="var">@3_pk_314</span>,<span class="var">@3_s_313</span>) <span class="conn">=&gt;</span> <span class="fun">false</span> if (forall <span class="fun">@gen2</span>. <span class="fun"></span>(<span class="var">@3_pk_314</span>,<span class="var">@3_s_313</span>) <span class="conn">&lt;&gt;</span> <span class="fun"></span>(<span class="fun">spkgen</span>(<span class="fun">@gen2</span>),<span class="fun">sign</span>(<span class="var">@3_m_315</span>,<span class="fun">sskgen</span>(<span class="fun">@gen2</span>))))<br>
+<span class="fun">checksign</span>(<span class="var">@3_m_311</span>,<span class="fun">spkgen</span>(<span class="var">@3_r_312</span>),<span class="fun">sign</span>(<span class="var">@3_m_311</span>,<span class="fun">sskgen</span>(<span class="var">@3_r_312</span>))) <span class="conn">=&gt;</span> <span class="fun">true</span><br>
+<br><span class="fun">adec</span>(<span class="fun">fail-any</span>,<span class="var">@mayfail_333</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">adec</span>(<span class="var">v_332</span>,<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">adec</span>(<span class="var">@5_c_329</span>,<span class="var">@5_sk_328</span>) <span class="conn">=&gt;</span> <span class="fun">bottom</span> if (forall <span class="fun">@gen17</span>,<span class="fun">@gen16</span>,<span class="fun">@gen15</span>. <span class="fun"></span>(<span class="var">@5_c_329</span>,<span class="var">@5_sk_328</span>) <span class="conn">&lt;&gt;</span> <span class="fun"></span>(<span class="fun">aenc_r</span>(<span class="fun">@gen15</span>,<span class="fun">pkgen</span>(<span class="fun">@gen16</span>),<span class="fun">@gen17</span>),<span class="fun">skgen</span>(<span class="fun">@gen16</span>)))<br>
+<span class="fun">adec</span>(<span class="fun">aenc_r</span>(<span class="var">@5_m_325</span>,<span class="fun">pkgen</span>(<span class="var">@5_r_326</span>),<span class="var">@5_r2_327</span>),<span class="fun">skgen</span>(<span class="var">@5_r_326</span>)) <span class="conn">=&gt;</span> <span class="fun">ainjbot</span>(<span class="var">@5_m_325</span>)<br>
+<br><span class="fun">@9_leak</span>(<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">@9_leak</span>(<span class="var">v_338</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span> if (forall <span class="fun">@gen50</span>,<span class="fun">@gen49</span>,<span class="fun">@gen48</span>,<span class="fun">@gen47</span>. <span class="var">v_338</span> <span class="conn">&lt;&gt;</span> <span class="fun">enc_r</span>(<span class="fun">@gen47</span>,<span class="fun">@gen48</span>,<span class="fun">@gen49</span>,<span class="fun">@gen50</span>))<br>
+<span class="fun">@9_leak</span>(<span class="fun">enc_r</span>(<span class="var">@9_m_334</span>,<span class="var">@9_d_335</span>,<span class="var">@9_k_336</span>,<span class="var">@9_r_337</span>)) <span class="conn">=&gt;</span> <span class="fun">sZ</span>(<span class="var">@9_m_334</span>)<br>
+<br><span class="fun">@9_keyeq</span>(<span class="var">v_349</span>,<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">@9_keyeq</span>(<span class="fun">fail-any</span>,<span class="var">@mayfail_348</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">@9_keyeq</span>(<span class="var">v_346</span>,<span class="var">v_347</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span> if (forall <span class="fun">@gen54</span>,<span class="fun">@gen52</span>,<span class="fun">@gen51</span>,<span class="fun">@gen57</span>,<span class="fun">@gen53</span>,<span class="fun">@gen56</span>,<span class="fun">@gen55</span>. <span class="fun"></span>(<span class="var">v_347</span>,<span class="var">v_346</span>) <span class="conn">&lt;&gt;</span> <span class="fun"></span>(<span class="fun">enc_r</span>(<span class="fun">@gen55</span>,<span class="fun">@gen56</span>,<span class="fun">@gen53</span>,<span class="fun">@gen57</span>),<span class="fun">enc_r</span>(<span class="fun">@gen51</span>,<span class="fun">@gen52</span>,<span class="fun">@gen53</span>,<span class="fun">@gen54</span>)))<br>
+<span class="fun">@9_keyeq</span>(<span class="fun">enc_r</span>(<span class="var">@9_x_339</span>,<span class="var">@9_d_340</span>,<span class="var">@9_k_341</span>,<span class="var">@9_r_342</span>),<span class="fun">enc_r</span>(<span class="var">@9_x'_343</span>,<span class="var">@9_d'_344</span>,<span class="var">@9_k_341</span>,<span class="var">@9_r'_345</span>)) <span class="conn">=&gt;</span> <span class="fun">true</span><br>
+<br><span class="fun">@9_get_salt</span>(<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">@9_get_salt</span>(<span class="var">v_354</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span> if (forall <span class="fun">@gen46</span>,<span class="fun">@gen45</span>,<span class="fun">@gen44</span>,<span class="fun">@gen43</span>. <span class="var">v_354</span> <span class="conn">&lt;&gt;</span> <span class="fun">enc_r</span>(<span class="fun">@gen43</span>,<span class="fun">@gen44</span>,<span class="fun">@gen45</span>,<span class="fun">@gen46</span>))<br>
+<span class="fun">@9_get_salt</span>(<span class="fun">enc_r</span>(<span class="var">@9_m_351</span>,<span class="var">@9_d_352</span>,<span class="var">@9_k_353</span>,<span class="var">@9_r_350</span>)) <span class="conn">=&gt;</span> <span class="var">@9_r_350</span><br>
+<br><span class="fun">@9_get_data</span>(<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">@9_get_data</span>(<span class="var">v_359</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span> if (forall <span class="fun">@gen42</span>,<span class="fun">@gen41</span>,<span class="fun">@gen40</span>,<span class="fun">@gen39</span>. <span class="var">v_359</span> <span class="conn">&lt;&gt;</span> <span class="fun">enc_r</span>(<span class="fun">@gen39</span>,<span class="fun">@gen40</span>,<span class="fun">@gen41</span>,<span class="fun">@gen42</span>))<br>
+<span class="fun">@9_get_data</span>(<span class="fun">enc_r</span>(<span class="var">@9_m_356</span>,<span class="var">@9_d_355</span>,<span class="var">@9_k_357</span>,<span class="var">@9_r_358</span>)) <span class="conn">=&gt;</span> <span class="var">@9_d_355</span><br>
+<br><span class="fun">@5_leak</span>(<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">@5_leak</span>(<span class="var">v_363</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span> if (forall <span class="fun">@gen14</span>,<span class="fun">@gen13</span>,<span class="fun">@gen12</span>. <span class="var">v_363</span> <span class="conn">&lt;&gt;</span> <span class="fun">aenc_r</span>(<span class="fun">@gen12</span>,<span class="fun">@gen13</span>,<span class="fun">@gen14</span>))<br>
+<span class="fun">@5_leak</span>(<span class="fun">aenc_r</span>(<span class="var">@5_m_360</span>,<span class="var">@5_pk_361</span>,<span class="var">@5_r_362</span>)) <span class="conn">=&gt;</span> <span class="fun">aZ</span>(<span class="var">@5_m_360</span>)<br>
+<br><span class="fun">@5_keyeq</span>(<span class="var">v_372</span>,<span class="fun">fail-any</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">@5_keyeq</span>(<span class="fun">fail-any</span>,<span class="var">@mayfail_371</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+<span class="fun">@5_keyeq</span>(<span class="var">v_369</span>,<span class="var">v_370</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span> if (forall <span class="fun">@gen25</span>,<span class="fun">@gen23</span>,<span class="fun">@gen27</span>,<span class="fun">@gen24</span>,<span class="fun">@gen26</span>. <span class="fun"></span>(<span class="var">v_370</span>,<span class="var">v_369</span>) <span class="conn">&lt;&gt;</span> <span class="fun"></span>(<span class="fun">aenc_r</span>(<span class="fun">@gen26</span>,<span class="fun">@gen24</span>,<span class="fun">@gen27</span>),<span class="fun">aenc_r</span>(<span class="fun">@gen23</span>,<span class="fun">@gen24</span>,<span class="fun">@gen25</span>)))<br>
+<span class="fun">@5_keyeq</span>(<span class="fun">aenc_r</span>(<span class="var">@5_x_364</span>,<span class="var">@5_y_365</span>,<span class="var">@5_r_366</span>),<span class="fun">aenc_r</span>(<span class="var">@5_x'_367</span>,<span class="var">@5_y_365</span>,<span class="var">@5_r'_368</span>)) <span class="conn">=&gt;</span> <span class="fun">true</span><br>
+<br>(<span class="fun">fail-any</span> <span class="fun">&amp;&amp;</span> <span class="var">@mayfail_376</span>) <span class="conn">=&gt;</span> <span class="fun">fail-any</span><br>
+(<span class="var">v_374</span> <span class="fun">&amp;&amp;</span> <span class="var">@mayfail_375</span>) <span class="conn">=&gt;</span> <span class="fun">false</span> if <span class="var">v_374</span> <span class="conn">&lt;&gt;</span> <span class="fun">true</span><br>
+(<span class="fun">true</span> <span class="fun">&amp;&amp;</span> <span class="var">@mayfail_373</span>) <span class="conn">=&gt;</span> <span class="var">@mayfail_373</span><br>
+<br></body>
+</html>

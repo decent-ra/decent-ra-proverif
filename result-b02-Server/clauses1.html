@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+		      <html>
+		    <head>
+		    <title>ProVerif: clauses for query 1</title>
+		    <link rel="stylesheet" href="cssproverif.css">
+									   </head>
+									 <body>
+									 <H1>Initial clauses</H1>
+
+<ul>
+
+<li><a name=clause0>Clause 0:</a> <span class="pred">AuthListIsIn</span>(<span class="var">@17_x_245</span>,<span class="var">@17_y_247</span>) <span class="conn">-&gt;</span> <span class="pred">AuthListIsIn</span>(<span class="var">@17_x_245</span>,<span class="fun">AuthListInsert</span>(<span class="var">@17_z_246</span>,<span class="var">@17_y_247</span>))<br>
+<span class="explain">(This clause is given in the input file.)</span><br>
+
+<li><a name=clause1>Clause 1:</a> <span class="pred">AuthListIsIn</span>(<span class="var">@17_x_260</span>,<span class="fun">AuthListInsert</span>(<span class="var">@17_x_260</span>,<span class="var">@17_y_261</span>))<br>
+<span class="explain">(This clause is given in the input file.)</span><br>
+
+<li><a name=clause2>Clause 2:</a> <span class="pred">attacker</span>(<span class="fun">zero_nonce</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">zero_nonce</span>.)</span><br>
+
+<li><a name=clause3>Clause 3:</a> <span class="pred">attacker</span>(<span class="fun">true</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">true</span>.)</span><br>
+
+<li><a name=clause4>Clause 4:</a> <span class="pred">attacker</span>(<span class="var">v_269</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">sskgen</span>(<span class="var">v_269</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">sskgen</span>.)</span><br>
+
+<li><a name=clause5>Clause 5:</a> <span class="pred">attacker</span>(<span class="var">v_271</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">spkgen</span>(<span class="var">v_271</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">spkgen</span>.)</span><br>
+
+<li><a name=clause6>Clause 6:</a> <span class="pred">attacker</span>(<span class="var">v_273</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">skgen</span>(<span class="var">v_273</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">skgen</span>.)</span><br>
+
+<li><a name=clause7>Clause 7:</a> <span class="pred">attacker</span>(<span class="var">v_275</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">sinjbot</span>(<span class="var">v_275</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">sinjbot</span>.)</span><br>
+
+<li><a name=clause8>Clause 8:</a> <span class="pred">attacker</span>(<span class="fun">sinjbot</span>(<span class="var">v_278</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_278</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-sinjbot</span>.)</span><br>
+
+<li><a name=clause9>Clause 9:</a> <span class="pred">attacker</span>(<span class="var">v_282</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_283</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="var">v_282</span>,<span class="var">v_283</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">sign</span>.)</span><br>
+
+<li><a name=clause10>Clause 10:</a> <span class="pred">attacker</span>(<span class="var">v_285</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">sZ</span>(<span class="var">v_285</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">sZ</span>.)</span><br>
+
+<li><a name=clause11>Clause 11:</a> <span class="pred">attacker</span>(<span class="var">v_287</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">pkgen</span>(<span class="var">v_287</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">pkgen</span>.)</span><br>
+
+<li><a name=clause12>Clause 12:</a> <span class="pred">attacker</span>(<span class="fun">malDecentSvr</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">malDecentSvr</span>.)</span><br>
+
+<li><a name=clause13>Clause 13:</a> <span class="pred">attacker</span>(<span class="var">v_290</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">kgen</span>(<span class="var">v_290</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">kgen</span>.)</span><br>
+
+<li><a name=clause14>Clause 14:</a> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="var">@3_m_292</span>,<span class="fun">sskgen</span>(<span class="var">@3_r_293</span>))) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">@3_m_292</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">getmess</span>.)</span><br>
+
+<li><a name=clause15>Clause 15:</a> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="var">@3_m_295</span>,<span class="fun">sskgen</span>(<span class="var">@3_r_296</span>))) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">spkgen</span>(<span class="var">@3_r_296</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">getkey</span>.)</span><br>
+
+<li><a name=clause16>Clause 16:</a> <span class="pred">attacker</span>(<span class="fun">false</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">false</span>.)</span><br>
+
+<li><a name=clause17>Clause 17:</a> <span class="pred">attacker</span>(<span class="fun">enclaveRecvName</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">enclaveRecvName</span>.)</span><br>
+
+<li><a name=clause18>Clause 18:</a> <span class="pred">attacker</span>(<span class="fun">enclaveRecv</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">enclaveRecv</span>.)</span><br>
+
+<li><a name=clause19>Clause 19:</a> <span class="pred">attacker</span>(<span class="fun">enclaveDecentSvr</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">enclaveDecentSvr</span>.)</span><br>
+
+<li><a name=clause20>Clause 20:</a> <span class="pred">attacker</span>(<span class="fun">enclaveD</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">enclaveD</span>.)</span><br>
+
+<li><a name=clause21>Clause 21:</a> <span class="pred">attacker</span>(<span class="fun">enclaveBName</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">enclaveBName</span>.)</span><br>
+
+<li><a name=clause22>Clause 22:</a> <span class="pred">attacker</span>(<span class="fun">enclaveB</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">enclaveB</span>.)</span><br>
+
+<li><a name=clause23>Clause 23:</a> <span class="pred">attacker</span>(<span class="fun">enclaveAName</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">enclaveAName</span>.)</span><br>
+
+<li><a name=clause24>Clause 24:</a> <span class="pred">attacker</span>(<span class="fun">enclaveA</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">enclaveA</span>.)</span><br>
+
+<li><a name=clause25>Clause 25:</a> <span class="pred">attacker</span>(<span class="var">v_301</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_302</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_303</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_304</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="var">v_301</span>,<span class="var">v_302</span>,<span class="var">v_303</span>,<span class="var">v_304</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">enc_r</span>.)</span><br>
+
+<li><a name=clause26>Clause 26:</a> <span class="pred">attacker</span>(<span class="fun">emptyStr</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">emptyStr</span>.)</span><br>
+
+<li><a name=clause27>Clause 27:</a> <span class="pred">attacker</span>(<span class="fun">dummy_key</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">dummy_key</span>.)</span><br>
+
+<li><a name=clause28>Clause 28:</a> <span class="pred">attacker</span>(<span class="fun">decentSvrName</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">decentSvrName</span>.)</span><br>
+
+<li><a name=clause29>Clause 29:</a> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="var">@9_m_314</span>,<span class="var">@9_d_315</span>,<span class="var">@9_k_316</span>,<span class="var">@9_r_317</span>)) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">@9_d_315</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">@9_k_316</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">sinjbot</span>(<span class="var">@9_m_314</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">dec</span>.)</span><br>
+
+<li><a name=clause30>Clause 30:</a> <span class="pred">attacker</span>(<span class="fun">bottom</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">bottom</span>.)</span><br>
+
+<li><a name=clause31>Clause 31:</a> <span class="pred">attacker</span>(<span class="var">v_330</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">ainjbot</span>(<span class="var">v_330</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">ainjbot</span>.)</span><br>
+
+<li><a name=clause32>Clause 32:</a> <span class="pred">attacker</span>(<span class="fun">ainjbot</span>(<span class="var">v_333</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_333</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-ainjbot</span>.)</span><br>
+
+<li><a name=clause33>Clause 33:</a> <span class="pred">attacker</span>(<span class="var">v_338</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_339</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_340</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">aenc_r</span>(<span class="var">v_338</span>,<span class="var">v_339</span>,<span class="var">v_340</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">aenc_r</span>.)</span><br>
+
+<li><a name=clause34>Clause 34:</a> <span class="pred">attacker</span>(<span class="fun">aenc_r</span>(<span class="var">@5_m_345</span>,<span class="fun">pkgen</span>(<span class="var">@5_r_346</span>),<span class="var">@5_r2_347</span>)) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">skgen</span>(<span class="var">@5_r_346</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">ainjbot</span>(<span class="var">@5_m_345</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">adec</span>.)</span><br>
+
+<li><a name=clause35>Clause 35:</a> <span class="pred">attacker</span>(<span class="var">v_349</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">aZ</span>(<span class="var">v_349</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">aZ</span>.)</span><br>
+
+<li><a name=clause36>Clause 36:</a> <span class="pred">attacker</span>(<span class="var">v_354</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_355</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_356</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_357</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">LocAttRep</span>(<span class="var">v_354</span>,<span class="var">v_355</span>,<span class="var">v_356</span>,<span class="var">v_357</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">LocAttRep</span>.)</span><br>
+
+<li><a name=clause37>Clause 37:</a> <span class="pred">attacker</span>(<span class="fun">LocAttRep</span>(<span class="var">v_378</span>,<span class="var">v_379</span>,<span class="var">v_380</span>,<span class="var">v_381</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_378</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-LocAttRep</span>.)</span><br>
+
+<li><a name=clause38>Clause 38:</a> <span class="pred">attacker</span>(<span class="fun">LocAttRep</span>(<span class="var">v_383</span>,<span class="var">v_384</span>,<span class="var">v_385</span>,<span class="var">v_386</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_384</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-LocAttRep</span>.)</span><br>
+
+<li><a name=clause39>Clause 39:</a> <span class="pred">attacker</span>(<span class="fun">LocAttRep</span>(<span class="var">v_388</span>,<span class="var">v_389</span>,<span class="var">v_390</span>,<span class="var">v_391</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_390</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">3-proj-LocAttRep</span>.)</span><br>
+
+<li><a name=clause40>Clause 40:</a> <span class="pred">attacker</span>(<span class="fun">LocAttRep</span>(<span class="var">v_393</span>,<span class="var">v_394</span>,<span class="var">v_395</span>,<span class="var">v_396</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_396</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">4-proj-LocAttRep</span>.)</span><br>
+
+<li><a name=clause41>Clause 41:</a> <span class="pred">attacker</span>(<span class="var">v_399</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">IncrNonce</span>(<span class="var">v_399</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">IncrNonce</span>.)</span><br>
+
+<li><a name=clause42>Clause 42:</a> <span class="pred">attacker</span>(<span class="fun">IncrNonce</span>(<span class="var">v_402</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_402</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-IncrNonce</span>.)</span><br>
+
+<li><a name=clause43>Clause 43:</a> <span class="pred">attacker</span>(<span class="var">v_407</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_408</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_409</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">IasRep2Signin</span>(<span class="var">v_407</span>,<span class="var">v_408</span>,<span class="var">v_409</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">IasRep2Signin</span>.)</span><br>
+
+<li><a name=clause44>Clause 44:</a> <span class="pred">attacker</span>(<span class="fun">IasRep2Signin</span>(<span class="var">v_422</span>,<span class="var">v_423</span>,<span class="var">v_424</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_422</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-IasRep2Signin</span>.)</span><br>
+
+<li><a name=clause45>Clause 45:</a> <span class="pred">attacker</span>(<span class="fun">IasRep2Signin</span>(<span class="var">v_426</span>,<span class="var">v_427</span>,<span class="var">v_428</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_427</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-IasRep2Signin</span>.)</span><br>
+
+<li><a name=clause46>Clause 46:</a> <span class="pred">attacker</span>(<span class="fun">IasRep2Signin</span>(<span class="var">v_430</span>,<span class="var">v_431</span>,<span class="var">v_432</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_432</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">3-proj-IasRep2Signin</span>.)</span><br>
+
+<li><a name=clause47>Clause 47:</a> <span class="pred">attacker</span>(<span class="var">v_435</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">HashEnclave</span>(<span class="var">v_435</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">HashEnclave</span>.)</span><br>
+
+<li><a name=clause48>Clause 48:</a> <span class="pred">attacker</span>(<span class="var">v_438</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_439</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="var">v_438</span>,<span class="var">v_439</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">EnclaveQuoteSignin</span>.)</span><br>
+
+<li><a name=clause49>Clause 49:</a> <span class="pred">attacker</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="var">v_446</span>,<span class="var">v_447</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_446</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-EnclaveQuoteSignin</span>.)</span><br>
+
+<li><a name=clause50>Clause 50:</a> <span class="pred">attacker</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="var">v_449</span>,<span class="var">v_450</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_450</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-EnclaveQuoteSignin</span>.)</span><br>
+
+<li><a name=clause51>Clause 51:</a> <span class="pred">attacker</span>(<span class="var">v_453</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">EcDiHeToKey</span>(<span class="var">v_453</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">EcDiHeToKey</span>.)</span><br>
+
+<li><a name=clause52>Clause 52:</a> <span class="pred">attacker</span>(<span class="fun">DiHeValG</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">DiHeValG</span>.)</span><br>
+
+<li><a name=clause53>Clause 53:</a> <span class="pred">attacker</span>(<span class="var">v_456</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_457</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">DiHeExp</span>(<span class="var">v_456</span>,<span class="var">v_457</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">DiHeExp</span>.)</span><br>
+
+<li><a name=clause54>Clause 54:</a> <span class="pred">attacker</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_458</span>)) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">@13_y_459</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_y_459</span>),<span class="var">@13_x_458</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">DiHeExp</span>.)</span><br>
+
+<li><a name=clause55>Clause 55:</a> <span class="pred">attacker</span>(<span class="var">v_462</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_463</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">DecentSvrSignin</span>(<span class="var">v_462</span>,<span class="var">v_463</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">DecentSvrSignin</span>.)</span><br>
+
+<li><a name=clause56>Clause 56:</a> <span class="pred">attacker</span>(<span class="fun">DecentSvrSignin</span>(<span class="var">v_470</span>,<span class="var">v_471</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_470</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-DecentSvrSignin</span>.)</span><br>
+
+<li><a name=clause57>Clause 57:</a> <span class="pred">attacker</span>(<span class="fun">DecentSvrSignin</span>(<span class="var">v_473</span>,<span class="var">v_474</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_474</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-DecentSvrSignin</span>.)</span><br>
+
+<li><a name=clause58>Clause 58:</a> <span class="pred">attacker</span>(<span class="var">v_479</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_480</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_481</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">DecentAppSignin</span>(<span class="var">v_479</span>,<span class="var">v_480</span>,<span class="var">v_481</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">DecentAppSignin</span>.)</span><br>
+
+<li><a name=clause59>Clause 59:</a> <span class="pred">attacker</span>(<span class="fun">DecentAppSignin</span>(<span class="var">v_494</span>,<span class="var">v_495</span>,<span class="var">v_496</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_494</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-DecentAppSignin</span>.)</span><br>
+
+<li><a name=clause60>Clause 60:</a> <span class="pred">attacker</span>(<span class="fun">DecentAppSignin</span>(<span class="var">v_498</span>,<span class="var">v_499</span>,<span class="var">v_500</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_499</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-DecentAppSignin</span>.)</span><br>
+
+<li><a name=clause61>Clause 61:</a> <span class="pred">attacker</span>(<span class="fun">DecentAppSignin</span>(<span class="var">v_502</span>,<span class="var">v_503</span>,<span class="var">v_504</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_504</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">3-proj-DecentAppSignin</span>.)</span><br>
+
+<li><a name=clause62>Clause 62:</a> <span class="pred">attacker</span>(<span class="var">v_508</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_509</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">AuthListNewItem</span>(<span class="var">v_508</span>,<span class="var">v_509</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">AuthListNewItem</span>.)</span><br>
+
+<li><a name=clause63>Clause 63:</a> <span class="pred">attacker</span>(<span class="fun">AuthListNewItem</span>(<span class="var">v_516</span>,<span class="var">v_517</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_516</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-AuthListNewItem</span>.)</span><br>
+
+<li><a name=clause64>Clause 64:</a> <span class="pred">attacker</span>(<span class="fun">AuthListNewItem</span>(<span class="var">v_519</span>,<span class="var">v_520</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_520</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-AuthListNewItem</span>.)</span><br>
+
+<li><a name=clause65>Clause 65:</a> <span class="pred">attacker</span>(<span class="var">v_524</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_525</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">AuthListInsert</span>(<span class="var">v_524</span>,<span class="var">v_525</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">AuthListInsert</span>.)</span><br>
+
+<li><a name=clause66>Clause 66:</a> <span class="pred">attacker</span>(<span class="fun">AuthListInsert</span>(<span class="var">v_532</span>,<span class="var">v_533</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_532</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-AuthListInsert</span>.)</span><br>
+
+<li><a name=clause67>Clause 67:</a> <span class="pred">attacker</span>(<span class="fun">AuthListInsert</span>(<span class="var">v_535</span>,<span class="var">v_536</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_536</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-AuthListInsert</span>.)</span><br>
+
+<li><a name=clause68>Clause 68:</a> <span class="pred">attacker</span>(<span class="fun">AuthListEmpty</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">AuthListEmpty</span>.)</span><br>
+
+<li><a name=clause69>Clause 69:</a> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="var">@9_m_539</span>,<span class="var">@9_d_540</span>,<span class="var">@9_k_541</span>,<span class="var">@9_r_542</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">sZ</span>(<span class="var">@9_m_539</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">@9_leak</span>.)</span><br>
+
+<li><a name=clause70>Clause 70:</a> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="var">@9_m_555</span>,<span class="var">@9_d_556</span>,<span class="var">@9_k_557</span>,<span class="var">@9_r_558</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">@9_r_558</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">@9_get_salt</span>.)</span><br>
+
+<li><a name=clause71>Clause 71:</a> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="var">@9_m_560</span>,<span class="var">@9_d_561</span>,<span class="var">@9_k_562</span>,<span class="var">@9_r_563</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">@9_d_561</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">@9_get_data</span>.)</span><br>
+
+<li><a name=clause72>Clause 72:</a> <span class="pred">attacker</span>(<span class="fun">aenc_r</span>(<span class="var">@5_m_565</span>,<span class="var">@5_pk_566</span>,<span class="var">@5_r_567</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">aZ</span>(<span class="var">@5_m_565</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">@5_leak</span>.)</span><br>
+
+<li><a name=clause73>Clause 73:</a> <span class="pred">attacker</span>(<span class="var">v_581</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_582</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_583</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_584</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">@19_DecentVrfyAppsignin</span>(<span class="var">v_581</span>,<span class="var">v_582</span>,<span class="var">v_583</span>,<span class="var">v_584</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">@19_DecentVrfyAppsignin</span>.)</span><br>
+
+<li><a name=clause74>Clause 74:</a> <span class="pred">attacker</span>(<span class="fun">@19_DecentVrfyAppsignin</span>(<span class="var">v_605</span>,<span class="var">v_606</span>,<span class="var">v_607</span>,<span class="var">v_608</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_605</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-@19_DecentVrfyAppsignin</span>.)</span><br>
+
+<li><a name=clause75>Clause 75:</a> <span class="pred">attacker</span>(<span class="fun">@19_DecentVrfyAppsignin</span>(<span class="var">v_610</span>,<span class="var">v_611</span>,<span class="var">v_612</span>,<span class="var">v_613</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_611</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-@19_DecentVrfyAppsignin</span>.)</span><br>
+
+<li><a name=clause76>Clause 76:</a> <span class="pred">attacker</span>(<span class="fun">@19_DecentVrfyAppsignin</span>(<span class="var">v_615</span>,<span class="var">v_616</span>,<span class="var">v_617</span>,<span class="var">v_618</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_617</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">3-proj-@19_DecentVrfyAppsignin</span>.)</span><br>
+
+<li><a name=clause77>Clause 77:</a> <span class="pred">attacker</span>(<span class="fun">@19_DecentVrfyAppsignin</span>(<span class="var">v_620</span>,<span class="var">v_621</span>,<span class="var">v_622</span>,<span class="var">v_623</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_623</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">4-proj-@19_DecentVrfyAppsignin</span>.)</span><br>
+
+<li><a name=clause78>Clause 78:</a> <span class="pred">attacker</span>(<span class="var">v_633</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_634</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_635</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_636</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_633</span>,<span class="var">v_634</span>,<span class="var">v_635</span>,<span class="var">v_636</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">4-tuple</span>.)</span><br>
+
+<li><a name=clause79>Clause 79:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_657</span>,<span class="var">v_658</span>,<span class="var">v_659</span>,<span class="var">v_660</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_657</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-4-tuple</span>.)</span><br>
+
+<li><a name=clause80>Clause 80:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_662</span>,<span class="var">v_663</span>,<span class="var">v_664</span>,<span class="var">v_665</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_663</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-4-tuple</span>.)</span><br>
+
+<li><a name=clause81>Clause 81:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_667</span>,<span class="var">v_668</span>,<span class="var">v_669</span>,<span class="var">v_670</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_669</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">3-proj-4-tuple</span>.)</span><br>
+
+<li><a name=clause82>Clause 82:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_672</span>,<span class="var">v_673</span>,<span class="var">v_674</span>,<span class="var">v_675</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_675</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">4-proj-4-tuple</span>.)</span><br>
+
+<li><a name=clause83>Clause 83:</a> <span class="pred">attacker</span>(<span class="var">v_680</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_681</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_682</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_680</span>,<span class="var">v_681</span>,<span class="var">v_682</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">3-tuple</span>.)</span><br>
+
+<li><a name=clause84>Clause 84:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_695</span>,<span class="var">v_696</span>,<span class="var">v_697</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_695</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-3-tuple</span>.)</span><br>
+
+<li><a name=clause85>Clause 85:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_699</span>,<span class="var">v_700</span>,<span class="var">v_701</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_700</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-3-tuple</span>.)</span><br>
+
+<li><a name=clause86>Clause 86:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_703</span>,<span class="var">v_704</span>,<span class="var">v_705</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_705</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">3-proj-3-tuple</span>.)</span><br>
+
+<li><a name=clause87>Clause 87:</a> <span class="pred">attacker</span>(<span class="var">v_709</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_710</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_709</span>,<span class="var">v_710</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">2-tuple</span>.)</span><br>
+
+<li><a name=clause88>Clause 88:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_717</span>,<span class="var">v_718</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_717</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-2-tuple</span>.)</span><br>
+
+<li><a name=clause89>Clause 89:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_720</span>,<span class="var">v_721</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_721</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-2-tuple</span>.)</span><br>
+
+<li><a name=clause90>Clause 90:</a> <span class="pred">attacker</span>(<span class="var">v_728</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_729</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_730</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_731</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_732</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_728</span>,<span class="var">v_729</span>,<span class="var">v_730</span>,<span class="var">v_731</span>,<span class="var">v_732</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">5-tuple</span>.)</span><br>
+
+<li><a name=clause91>Clause 91:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_763</span>,<span class="var">v_764</span>,<span class="var">v_765</span>,<span class="var">v_766</span>,<span class="var">v_767</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_763</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-5-tuple</span>.)</span><br>
+
+<li><a name=clause92>Clause 92:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_769</span>,<span class="var">v_770</span>,<span class="var">v_771</span>,<span class="var">v_772</span>,<span class="var">v_773</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_770</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">2-proj-5-tuple</span>.)</span><br>
+
+<li><a name=clause93>Clause 93:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_775</span>,<span class="var">v_776</span>,<span class="var">v_777</span>,<span class="var">v_778</span>,<span class="var">v_779</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_777</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">3-proj-5-tuple</span>.)</span><br>
+
+<li><a name=clause94>Clause 94:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_781</span>,<span class="var">v_782</span>,<span class="var">v_783</span>,<span class="var">v_784</span>,<span class="var">v_785</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_784</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">4-proj-5-tuple</span>.)</span><br>
+
+<li><a name=clause95>Clause 95:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_787</span>,<span class="var">v_788</span>,<span class="var">v_789</span>,<span class="var">v_790</span>,<span class="var">v_791</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_791</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">5-proj-5-tuple</span>.)</span><br>
+
+<li><a name=clause96>Clause 96:</a> <span class="pred">attacker</span>(<span class="var">v_794</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_794</span>))<br>
+<span class="explain">(The attacker applies function <span class="fun">1-tuple</span>.)</span><br>
+
+<li><a name=clause97>Clause 97:</a> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="var">v_797</span>)) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_797</span>)<br>
+<span class="explain">(The attacker applies function <span class="fun">1-proj-1-tuple</span>.)</span><br>
+
+<li><a name=clause98>Clause 98:</a> <span class="pred">mess</span>(<span class="var">v_800</span>,<span class="var">v_799</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_800</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="var">v_799</span>)<br>
+<span class="explain">(The attacker can listen on all channels it has.)</span><br>
+
+<li><a name=clause99>Clause 99:</a> <span class="pred">attacker</span>(<span class="var">v_802</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">v_801</span>) <span class="conn">-&gt;</span> <span class="pred">mess</span>(<span class="var">v_802</span>,<span class="var">v_801</span>)<br>
+<span class="explain">(The attacker can send messages it has on all channels it has.)</span><br>
+
+<li><a name=clause100>Clause 100:</a> <span class="pred">attacker</span>(<span class="fun">fail-any</span>)<br>
+<span class="explain">(Initial knowledge of the attacker.)</span><br>
+
+<li><a name=clause101>Clause 101:</a> <span class="pred">attacker</span>(<span class="name">svrIasCh</span>[])<br>
+<span class="explain">(Initial knowledge of the attacker.)</span><br>
+
+<li><a name=clause102>Clause 102:</a> <span class="pred">attacker</span>(<span class="name">recvCh</span>[])<br>
+<span class="explain">(Initial knowledge of the attacker.)</span><br>
+
+<li><a name=clause103>Clause 103:</a> <span class="pred">attacker</span>(<span class="name">peerCh</span>[])<br>
+<span class="explain">(Initial knowledge of the attacker.)</span><br>
+
+<li><a name=clause104>Clause 104:</a> <span class="pred">attacker</span>(<span class="name">attackCh</span>[])<br>
+<span class="explain">(Initial knowledge of the attacker.)</span><br>
+
+<li><a name=clause105>Clause 105:</a> <span class="pred">attacker</span>(<span class="name">appSvrCh</span>[])<br>
+<span class="explain">(Initial knowledge of the attacker.)</span><br>
+
+<li><a name=clause106>Clause 106:</a> <span class="pred">equal</span>(<span class="var">v_804</span>,<span class="var">v_804</span>)<br>
+<span class="explain">(Definition of equal.)</span><br>
+
+<li><a name=clause107>Clause 107:</a> <span class="pred">attacker</span>(<span class="var">new-name</span>)<br>
+<span class="explain">(The attacker can create new names.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">new-name</span> <span class="conn">=</span> <span class="name">new-name</span>[!att = <span class="var">v_805</span>]
+</ul>
+
+<li><a name=clause108>Clause 108:</a> <span class="var">@3_r_948</span> <span class="conn">&lt;&gt;</span> <span class="fun">encPrvsKeySeed</span> <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="var">@15_encHash_946</span>,<span class="var">@15_appData_947</span>),<span class="fun">sskgen</span>(<span class="var">@3_r_948</span>))) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">false</span>,<span class="var">@15_encHash_946</span>,<span class="var">@15_appData_947</span>),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)))<br>
+<span class="explain">(If the message <span class="fun">sign</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="var">@15_encHash_946</span>,<span class="var">@15_appData_947</span>),<span class="fun">sskgen</span>(<span class="var">@3_r_948</span>)) is received from the attacker at input <a href="process_0.html#occ5" target="process" class="occ">{5}</a>,<br>
+<span class="var">@3_r_948</span> <span class="conn">&lt;&gt;</span> <span class="fun">encPrvsKeySeed</span><br>
+then the message <span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">false</span>,<span class="var">@15_encHash_946</span>,<span class="var">@15_appData_947</span>),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)) may be sent to the attacker at output <a href="process_0.html#occ9" target="process" class="occ">{9}</a>.)</span><br>
+
+<li><a name=clause109>Clause 109:</a> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="var">@15_encHash_1051</span>,<span class="var">@15_appData_1052</span>),<span class="fun">sskgen</span>(<span class="fun">encPrvsKeySeed</span>))) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="var">@15_encHash_1051</span>,<span class="var">@15_appData_1052</span>),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)))<br>
+<span class="explain">(If the message <span class="fun">sign</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="var">@15_encHash_1051</span>,<span class="var">@15_appData_1052</span>),<span class="fun">sskgen</span>(<span class="fun">encPrvsKeySeed</span>)) is received from the attacker at input <a href="process_0.html#occ5" target="process" class="occ">{5}</a>,<br>
+then the message <span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="var">@15_encHash_1051</span>,<span class="var">@15_appData_1052</span>),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)) may be sent to the attacker at output <a href="process_0.html#occ9" target="process" class="occ">{9}</a>.)</span><br>
+
+<li><a name=clause110>Clause 110:</a> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2417</span>)),<span class="fun">sskgen</span>(<span class="fun">encPrvsKeySeed</span>)))<br>
+<span class="explain">(The message <span class="fun">sign</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2417</span>)),<span class="fun">sskgen</span>(<span class="fun">encPrvsKeySeed</span>)) may be sent to the attacker at output <a href="process_0.html#occ17" target="process" class="occ">{17}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">decentSvrKeySeed_2417</span> <span class="conn">=</span> <span class="name">decentSvrKeySeed</span>[!2 = <span class="var">@sid_1167</span>,!1 = <span class="var">@sid_1168</span>]
+</ul>
+
+<li><a name=clause111>Clause 111:</a> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2420</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>))) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">decentSvrEcKey1_2418</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">emptyStr</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2419</span>)))<br>
+<span class="explain">(If the message <span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2420</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)) is received from the attacker at input <a href="process_0.html#occ18" target="process" class="occ">{18}</a>,<br>
+then the message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">decentSvrEcKey1_2418</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">emptyStr</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2419</span>)) may be sent to the attacker at output <a href="process_0.html#occ23" target="process" class="occ">{23}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">decentSvrEcKey1_2418</span> <span class="conn">=</span> <span class="name">decentSvrEcKey1</span>[!2 = <span class="var">@sid_1284</span>,!1 = <span class="var">@sid_1285</span>]
+<li><span class="var">localRepKey_2419</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_1285</span>]
+<li><span class="var">decentSvrKeySeed_2420</span> <span class="conn">=</span> <span class="name">decentSvrKeySeed</span>[!2 = <span class="var">@sid_1284</span>,!1 = <span class="var">@sid_1285</span>]
+</ul>
+
+<li><a name=clause112>Clause 112:</a> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@18_appSPkey_1410</span>,<span class="var">@18_auLs_1411</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@18_appEcPKey_1412</span>,<span class="var">decentSvrEcKey1_2422</span>)),<span class="var">@9_r_1415</span>)) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="var">@18_appEcPKey_1412</span>,<span class="var">@18_appEncHash_1416</span>,<span class="var">@18_appAppData_1417</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2421</span>))) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2423</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>))) <span class="conn">-&gt;</span> <span class="pred">end</span>(<span class="var">@sid_1413</span>,<span class="fun">DecentSvrIssueCert</span>(<span class="fun">enclaveDecentSvr</span>,<span class="var">@18_appEncHash_1416</span>,<span class="var">localRepKey_2421</span>,<span class="var">@18_appSPkey_1410</span>,<span class="var">@18_auLs_1411</span>))<br>
+<span class="explain">(If the message <span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2423</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)) is received from the attacker at input <a href="process_0.html#occ18" target="process" class="occ">{18}</a>,<br>
+the message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="var">@18_appEcPKey_1412</span>,<span class="var">@18_appEncHash_1416</span>,<span class="var">@18_appAppData_1417</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2421</span>)) is received from the attacker at input <a href="process_0.html#occ24" target="process" class="occ">{24}</a>,<br>
+the message <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@18_appSPkey_1410</span>,<span class="var">@18_auLs_1411</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@18_appEcPKey_1412</span>,<span class="var">decentSvrEcKey1_2422</span>)),<span class="var">@9_r_1415</span>) is received from the attacker at input <a href="process_0.html#occ27" target="process" class="occ">{27}</a>,<br>
+then event <span class="fun">DecentSvrIssueCert</span>(<span class="fun">enclaveDecentSvr</span>,<span class="var">@18_appEncHash_1416</span>,<span class="var">localRepKey_2421</span>,<span class="var">@18_appSPkey_1410</span>,<span class="var">@18_auLs_1411</span>) may be executed at <a href="process_0.html#occ32" target="process" class="occ">{32}</a> in session <span class="var">@sid_1413</span>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">localRepKey_2421</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_1414</span>]
+<li><span class="var">decentSvrEcKey1_2422</span> <span class="conn">=</span> <span class="name">decentSvrEcKey1</span>[!2 = <span class="var">@sid_1413</span>,!1 = <span class="var">@sid_1414</span>]
+<li><span class="var">decentSvrKeySeed_2423</span> <span class="conn">=</span> <span class="name">decentSvrKeySeed</span>[!2 = <span class="var">@sid_1413</span>,!1 = <span class="var">@sid_1414</span>]
+</ul>
+
+<li><a name=clause113>Clause 113:</a> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@18_appSPkey_1475</span>,<span class="var">@18_auLs_1476</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@18_appEcPKey_1477</span>,<span class="var">decentSvrEcKey1_2425</span>)),<span class="var">@9_r_1480</span>)) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="var">@18_appEcPKey_1477</span>,<span class="var">@18_appEncHash_1481</span>,<span class="var">@18_appAppData_1482</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2426</span>))) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2424</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>))) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="fun"></span>(<span class="fun">sign</span>(<span class="fun">DecentSvrSignin</span>(<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2424</span>),<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2424</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>))),<span class="fun">sskgen</span>(<span class="var">decentSvrKeySeed_2424</span>)),<span class="fun">sign</span>(<span class="fun">DecentAppSignin</span>(<span class="var">@18_appEncHash_1481</span>,<span class="var">@18_appSPkey_1475</span>,<span class="var">@18_auLs_1476</span>),<span class="fun">sskgen</span>(<span class="var">decentSvrKeySeed_2424</span>))),<span class="fun"></span>(<span class="fun">true</span>,<span class="fun">IncrNonce</span>(<span class="fun">zero_nonce</span>)),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@18_appEcPKey_1477</span>,<span class="var">decentSvrEcKey1_2425</span>)),<span class="var">@9_r_2427</span>))<br>
+<span class="explain">(If the message <span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2424</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)) is received from the attacker at input <a href="process_0.html#occ18" target="process" class="occ">{18}</a>,<br>
+the message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="var">@18_appEcPKey_1477</span>,<span class="var">@18_appEncHash_1481</span>,<span class="var">@18_appAppData_1482</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2426</span>)) is received from the attacker at input <a href="process_0.html#occ24" target="process" class="occ">{24}</a>,<br>
+the message <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@18_appSPkey_1475</span>,<span class="var">@18_auLs_1476</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@18_appEcPKey_1477</span>,<span class="var">decentSvrEcKey1_2425</span>)),<span class="var">@9_r_1480</span>) is received from the attacker at input <a href="process_0.html#occ27" target="process" class="occ">{27}</a>,<br>
+then the message <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="fun">sign</span>(<span class="fun">DecentSvrSignin</span>(<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2424</span>),<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2424</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>))),<span class="fun">sskgen</span>(<span class="var">decentSvrKeySeed_2424</span>)),<span class="fun">sign</span>(<span class="fun">DecentAppSignin</span>(<span class="var">@18_appEncHash_1481</span>,<span class="var">@18_appSPkey_1475</span>,<span class="var">@18_auLs_1476</span>),<span class="fun">sskgen</span>(<span class="var">decentSvrKeySeed_2424</span>))),<span class="fun"></span>(<span class="fun">true</span>,<span class="fun">IncrNonce</span>(<span class="fun">zero_nonce</span>)),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@18_appEcPKey_1477</span>,<span class="var">decentSvrEcKey1_2425</span>)),<span class="var">@9_r_2427</span>) may be sent to the attacker at output <a href="process_0.html#occ34" target="process" class="occ">{34}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">decentSvrKeySeed_2424</span> <span class="conn">=</span> <span class="name">decentSvrKeySeed</span>[!2 = <span class="var">@sid_1478</span>,!1 = <span class="var">@sid_1479</span>]
+<li><span class="var">decentSvrEcKey1_2425</span> <span class="conn">=</span> <span class="name">decentSvrEcKey1</span>[!2 = <span class="var">@sid_1478</span>,!1 = <span class="var">@sid_1479</span>]
+<li><span class="var">localRepKey_2426</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_1479</span>]
+<li><span class="var">@9_r_2427</span> <span class="conn">=</span> <span class="name">@9_r_125</span>[@18_certSignReqCipher = <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@18_appSPkey_1475</span>,<span class="var">@18_auLs_1476</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@18_appEcPKey_1477</span>,<span class="var">decentSvrEcKey1_2425</span>)),<span class="var">@9_r_1480</span>),@18_appLocAttRep = <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="var">@18_appEcPKey_1477</span>,<span class="var">@18_appEncHash_1481</span>,<span class="var">@18_appAppData_1482</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2426</span>)),@18_iasRep = <span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2424</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)),!2 = <span class="var">@sid_1478</span>,!1 = <span class="var">@sid_1479</span>]
+</ul>
+
+<li><a name=clause114>Clause 114:</a> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@18_appSPkey_1598</span>,<span class="var">@18_auLs_1599</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">decentSvrEcKey1_2429</span>),<span class="var">@13_x_1602</span>)),<span class="var">@9_r_1603</span>)) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_1602</span>),<span class="var">@18_appEncHash_1604</span>,<span class="var">@18_appAppData_1605</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2428</span>))) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2430</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>))) <span class="conn">-&gt;</span> <span class="pred">end</span>(<span class="var">@sid_1600</span>,<span class="fun">DecentSvrIssueCert</span>(<span class="fun">enclaveDecentSvr</span>,<span class="var">@18_appEncHash_1604</span>,<span class="var">localRepKey_2428</span>,<span class="var">@18_appSPkey_1598</span>,<span class="var">@18_auLs_1599</span>))<br>
+<span class="explain">(If the message <span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2430</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)) is received from the attacker at input <a href="process_0.html#occ18" target="process" class="occ">{18}</a>,<br>
+the message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_1602</span>),<span class="var">@18_appEncHash_1604</span>,<span class="var">@18_appAppData_1605</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2428</span>)) is received from the attacker at input <a href="process_0.html#occ24" target="process" class="occ">{24}</a>,<br>
+the message <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@18_appSPkey_1598</span>,<span class="var">@18_auLs_1599</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">decentSvrEcKey1_2429</span>),<span class="var">@13_x_1602</span>)),<span class="var">@9_r_1603</span>) is received from the attacker at input <a href="process_0.html#occ27" target="process" class="occ">{27}</a>,<br>
+then event <span class="fun">DecentSvrIssueCert</span>(<span class="fun">enclaveDecentSvr</span>,<span class="var">@18_appEncHash_1604</span>,<span class="var">localRepKey_2428</span>,<span class="var">@18_appSPkey_1598</span>,<span class="var">@18_auLs_1599</span>) may be executed at <a href="process_0.html#occ32" target="process" class="occ">{32}</a> in session <span class="var">@sid_1600</span>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">localRepKey_2428</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_1601</span>]
+<li><span class="var">decentSvrEcKey1_2429</span> <span class="conn">=</span> <span class="name">decentSvrEcKey1</span>[!2 = <span class="var">@sid_1600</span>,!1 = <span class="var">@sid_1601</span>]
+<li><span class="var">decentSvrKeySeed_2430</span> <span class="conn">=</span> <span class="name">decentSvrKeySeed</span>[!2 = <span class="var">@sid_1600</span>,!1 = <span class="var">@sid_1601</span>]
+</ul>
+
+<li><a name=clause115>Clause 115:</a> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@18_appSPkey_1663</span>,<span class="var">@18_auLs_1664</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">decentSvrEcKey1_2432</span>),<span class="var">@13_x_1667</span>)),<span class="var">@9_r_1668</span>)) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_1667</span>),<span class="var">@18_appEncHash_1669</span>,<span class="var">@18_appAppData_1670</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2433</span>))) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2431</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>))) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="fun"></span>(<span class="fun">sign</span>(<span class="fun">DecentSvrSignin</span>(<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2431</span>),<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2431</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>))),<span class="fun">sskgen</span>(<span class="var">decentSvrKeySeed_2431</span>)),<span class="fun">sign</span>(<span class="fun">DecentAppSignin</span>(<span class="var">@18_appEncHash_1669</span>,<span class="var">@18_appSPkey_1663</span>,<span class="var">@18_auLs_1664</span>),<span class="fun">sskgen</span>(<span class="var">decentSvrKeySeed_2431</span>))),<span class="fun"></span>(<span class="fun">true</span>,<span class="fun">IncrNonce</span>(<span class="fun">zero_nonce</span>)),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">decentSvrEcKey1_2432</span>),<span class="var">@13_x_1667</span>)),<span class="var">@9_r_2434</span>))<br>
+<span class="explain">(If the message <span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2431</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)) is received from the attacker at input <a href="process_0.html#occ18" target="process" class="occ">{18}</a>,<br>
+the message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_1667</span>),<span class="var">@18_appEncHash_1669</span>,<span class="var">@18_appAppData_1670</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2433</span>)) is received from the attacker at input <a href="process_0.html#occ24" target="process" class="occ">{24}</a>,<br>
+the message <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@18_appSPkey_1663</span>,<span class="var">@18_auLs_1664</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">decentSvrEcKey1_2432</span>),<span class="var">@13_x_1667</span>)),<span class="var">@9_r_1668</span>) is received from the attacker at input <a href="process_0.html#occ27" target="process" class="occ">{27}</a>,<br>
+then the message <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="fun">sign</span>(<span class="fun">DecentSvrSignin</span>(<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2431</span>),<span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2431</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>))),<span class="fun">sskgen</span>(<span class="var">decentSvrKeySeed_2431</span>)),<span class="fun">sign</span>(<span class="fun">DecentAppSignin</span>(<span class="var">@18_appEncHash_1669</span>,<span class="var">@18_appSPkey_1663</span>,<span class="var">@18_auLs_1664</span>),<span class="fun">sskgen</span>(<span class="var">decentSvrKeySeed_2431</span>))),<span class="fun"></span>(<span class="fun">true</span>,<span class="fun">IncrNonce</span>(<span class="fun">zero_nonce</span>)),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">decentSvrEcKey1_2432</span>),<span class="var">@13_x_1667</span>)),<span class="var">@9_r_2434</span>) may be sent to the attacker at output <a href="process_0.html#occ34" target="process" class="occ">{34}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">decentSvrKeySeed_2431</span> <span class="conn">=</span> <span class="name">decentSvrKeySeed</span>[!2 = <span class="var">@sid_1665</span>,!1 = <span class="var">@sid_1666</span>]
+<li><span class="var">decentSvrEcKey1_2432</span> <span class="conn">=</span> <span class="name">decentSvrEcKey1</span>[!2 = <span class="var">@sid_1665</span>,!1 = <span class="var">@sid_1666</span>]
+<li><span class="var">localRepKey_2433</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_1666</span>]
+<li><span class="var">@9_r_2434</span> <span class="conn">=</span> <span class="name">@9_r_125</span>[@18_certSignReqCipher = <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@18_appSPkey_1663</span>,<span class="var">@18_auLs_1664</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">decentSvrEcKey1_2432</span>),<span class="var">@13_x_1667</span>)),<span class="var">@9_r_1668</span>),@18_appLocAttRep = <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_1667</span>),<span class="var">@18_appEncHash_1669</span>,<span class="var">@18_appAppData_1670</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2433</span>)),@18_iasRep = <span class="fun">sign</span>(<span class="fun">IasRep2Signin</span>(<span class="fun">true</span>,<span class="fun">HashEnclave</span>(<span class="fun">enclaveDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">decentSvrKeySeed_2431</span>)),<span class="fun">sskgen</span>(<span class="fun">iasRepKeySeed</span>)),!2 = <span class="var">@sid_1665</span>,!1 = <span class="var">@sid_1666</span>]
+</ul>
+
+<li><a name=clause116>Clause 116:</a> <span class="pred">begin</span>(<span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2435</span>),<span class="var">someAuls_1763</span>), <span class="var">someAuls</span> = <span class="var">someAuls_1763</span>, <span class="var">@sid_1743</span> = <span class="var">@sid_1764</span>, <span class="var">@sid_1134</span> = <span class="var">@sid_1765</span>, <span class="var">@occ39</span> = <span class="fun">@occ_cst</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">someAuls_1763</span>) <span class="conn">-&gt;</span> <span class="pred">end</span>(<span class="var">@sid_1764</span>,<span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2435</span>),<span class="var">someAuls_1763</span>))<br>
+<span class="explain">(If the message <span class="var">someAuls_1763</span> is received from the attacker at input <a href="process_0.html#occ36" target="process" class="occ">{36}</a>,<br>
+event <span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2435</span>),<span class="var">someAuls_1763</span>) is executed at <a href="process_0.html#occ39" target="process" class="occ">{39}</a>,<br>
+then event <span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2435</span>),<span class="var">someAuls_1763</span>) may be executed at <a href="process_0.html#occ39" target="process" class="occ">{39}</a> in session <span class="var">@sid_1764</span>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">enclaveKeySeed_2435</span> <span class="conn">=</span> <span class="name">enclaveKeySeed</span>[someAuls = <span class="var">someAuls_1763</span>,!2 = <span class="var">@sid_1764</span>,!1 = <span class="var">@sid_1765</span>]
+</ul>
+
+<li><a name=clause117>Clause 117:</a> <span class="pred">begin</span>(<span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2438</span>),<span class="var">someAuls_1809</span>), <span class="var">someAuls</span> = <span class="var">someAuls_1809</span>, <span class="var">@sid_1743</span> = <span class="var">@sid_1810</span>, <span class="var">@sid_1134</span> = <span class="var">@sid_1811</span>, <span class="var">@occ39</span> = <span class="fun">@occ_cst</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">someAuls_1809</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">enclaveEcKey1_2436</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveA</span>),<span class="fun">emptyStr</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2437</span>)))<br>
+<span class="explain">(If the message <span class="var">someAuls_1809</span> is received from the attacker at input <a href="process_0.html#occ36" target="process" class="occ">{36}</a>,<br>
+event <span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2438</span>),<span class="var">someAuls_1809</span>) is executed at <a href="process_0.html#occ39" target="process" class="occ">{39}</a>,<br>
+then the message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">enclaveEcKey1_2436</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveA</span>),<span class="fun">emptyStr</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2437</span>)) may be sent to the attacker at output <a href="process_0.html#occ41" target="process" class="occ">{41}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">enclaveEcKey1_2436</span> <span class="conn">=</span> <span class="name">enclaveEcKey1</span>[someAuls = <span class="var">someAuls_1809</span>,!2 = <span class="var">@sid_1810</span>,!1 = <span class="var">@sid_1811</span>]
+<li><span class="var">localRepKey_2437</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_1811</span>]
+<li><span class="var">enclaveKeySeed_2438</span> <span class="conn">=</span> <span class="name">enclaveKeySeed</span>[someAuls = <span class="var">someAuls_1809</span>,!2 = <span class="var">@sid_1810</span>,!1 = <span class="var">@sid_1811</span>]
+</ul>
+
+<li><a name=clause118>Clause 118:</a> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="var">@19_svrEcPKey_1917</span>,<span class="var">@19_svrEncHash_1918</span>,<span class="var">@19_svrAppData_1919</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2441</span>))) <span class="conn">&amp;&amp;</span> <span class="pred">begin</span>(<span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2439</span>),<span class="var">someAuls_1921</span>), <span class="var">@19_svrLocAttRep</span> = <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="var">@19_svrEcPKey_1917</span>,<span class="var">@19_svrEncHash_1918</span>,<span class="var">@19_svrAppData_1919</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2441</span>)), <span class="var">someAuls</span> = <span class="var">someAuls_1921</span>, <span class="var">@sid_1743</span> = <span class="var">@sid_1922</span>, <span class="var">@sid_1134</span> = <span class="var">@sid_1920</span>, <span class="var">@occ39</span> = <span class="fun">@occ_cst</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">someAuls_1921</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="fun"></span>(<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2439</span>),<span class="var">someAuls_1921</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@19_svrEcPKey_1917</span>,<span class="var">enclaveEcKey1_2440</span>)),<span class="var">@9_r_2442</span>))<br>
+<span class="explain">(If the message <span class="var">someAuls_1921</span> is received from the attacker at input <a href="process_0.html#occ36" target="process" class="occ">{36}</a>,<br>
+event <span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2439</span>),<span class="var">someAuls_1921</span>) is executed at <a href="process_0.html#occ39" target="process" class="occ">{39}</a>,<br>
+the message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="var">@19_svrEcPKey_1917</span>,<span class="var">@19_svrEncHash_1918</span>,<span class="var">@19_svrAppData_1919</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2441</span>)) is received from the attacker at input <a href="process_0.html#occ42" target="process" class="occ">{42}</a>,<br>
+then the message <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2439</span>),<span class="var">someAuls_1921</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@19_svrEcPKey_1917</span>,<span class="var">enclaveEcKey1_2440</span>)),<span class="var">@9_r_2442</span>) may be sent to the attacker at output <a href="process_0.html#occ49" target="process" class="occ">{49}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">enclaveKeySeed_2439</span> <span class="conn">=</span> <span class="name">enclaveKeySeed</span>[someAuls = <span class="var">someAuls_1921</span>,!2 = <span class="var">@sid_1922</span>,!1 = <span class="var">@sid_1920</span>]
+<li><span class="var">enclaveEcKey1_2440</span> <span class="conn">=</span> <span class="name">enclaveEcKey1</span>[someAuls = <span class="var">someAuls_1921</span>,!2 = <span class="var">@sid_1922</span>,!1 = <span class="var">@sid_1920</span>]
+<li><span class="var">localRepKey_2441</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_1920</span>]
+<li><span class="var">@9_r_2442</span> <span class="conn">=</span> <span class="name">@9_r_126</span>[@19_svrLocAttRep = <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="var">@19_svrEcPKey_1917</span>,<span class="var">@19_svrEncHash_1918</span>,<span class="var">@19_svrAppData_1919</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2441</span>)),someAuls = <span class="var">someAuls_1921</span>,!2 = <span class="var">@sid_1922</span>,!1 = <span class="var">@sid_1920</span>]
+</ul>
+
+<li><a name=clause119>Clause 119:</a> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@19_svrCert_2004</span>,<span class="var">@19_appCert_2005</span>),<span class="fun"></span>(<span class="fun">true</span>,<span class="fun">IncrNonce</span>(<span class="fun">zero_nonce</span>)),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@19_svrEcPKey_2006</span>,<span class="var">enclaveEcKey1_2444</span>)),<span class="var">@9_r_2010</span>)) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="var">@19_svrEcPKey_2006</span>,<span class="var">@19_svrEncHash_2011</span>,<span class="var">@19_svrAppData_2012</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2445</span>))) <span class="conn">&amp;&amp;</span> <span class="pred">begin</span>(<span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2443</span>),<span class="var">someAuls_2007</span>), <span class="var">@19_appCertCipher</span> = <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@19_svrCert_2004</span>,<span class="var">@19_appCert_2005</span>),<span class="fun"></span>(<span class="fun">true</span>,<span class="fun">IncrNonce</span>(<span class="fun">zero_nonce</span>)),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@19_svrEcPKey_2006</span>,<span class="var">enclaveEcKey1_2444</span>)),<span class="var">@9_r_2010</span>), <span class="var">@19_svrLocAttRep</span> = <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="var">@19_svrEcPKey_2006</span>,<span class="var">@19_svrEncHash_2011</span>,<span class="var">@19_svrAppData_2012</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2445</span>)), <span class="var">someAuls</span> = <span class="var">someAuls_2007</span>, <span class="var">@sid_1743</span> = <span class="var">@sid_2008</span>, <span class="var">@sid_1134</span> = <span class="var">@sid_2009</span>, <span class="var">@occ39</span> = <span class="fun">@occ_cst</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">someAuls_2007</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="fun"></span>(<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>)),<span class="fun">sign</span>(<span class="fun"></span>(<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>)),<span class="fun">sskgen</span>(<span class="var">enclaveKeySeed_2443</span>)),<span class="var">@19_svrCert_2004</span>,<span class="var">@19_appCert_2005</span>))<br>
+<span class="explain">(If the message <span class="var">someAuls_2007</span> is received from the attacker at input <a href="process_0.html#occ36" target="process" class="occ">{36}</a>,<br>
+event <span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2443</span>),<span class="var">someAuls_2007</span>) is executed at <a href="process_0.html#occ39" target="process" class="occ">{39}</a>,<br>
+the message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="var">@19_svrEcPKey_2006</span>,<span class="var">@19_svrEncHash_2011</span>,<span class="var">@19_svrAppData_2012</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2445</span>)) is received from the attacker at input <a href="process_0.html#occ42" target="process" class="occ">{42}</a>,<br>
+the message <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@19_svrCert_2004</span>,<span class="var">@19_appCert_2005</span>),<span class="fun"></span>(<span class="fun">true</span>,<span class="fun">IncrNonce</span>(<span class="fun">zero_nonce</span>)),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="var">@19_svrEcPKey_2006</span>,<span class="var">enclaveEcKey1_2444</span>)),<span class="var">@9_r_2010</span>) is received from the attacker at input <a href="process_0.html#occ50" target="process" class="occ">{50}</a>,<br>
+then the message <span class="fun"></span>(<span class="fun"></span>(<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>)),<span class="fun">sign</span>(<span class="fun"></span>(<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>)),<span class="fun">sskgen</span>(<span class="var">enclaveKeySeed_2443</span>)),<span class="var">@19_svrCert_2004</span>,<span class="var">@19_appCert_2005</span>) may be sent to the attacker at output <a href="process_0.html#occ52" target="process" class="occ">{52}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">enclaveKeySeed_2443</span> <span class="conn">=</span> <span class="name">enclaveKeySeed</span>[someAuls = <span class="var">someAuls_2007</span>,!2 = <span class="var">@sid_2008</span>,!1 = <span class="var">@sid_2009</span>]
+<li><span class="var">enclaveEcKey1_2444</span> <span class="conn">=</span> <span class="name">enclaveEcKey1</span>[someAuls = <span class="var">someAuls_2007</span>,!2 = <span class="var">@sid_2008</span>,!1 = <span class="var">@sid_2009</span>]
+<li><span class="var">localRepKey_2445</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_2009</span>]
+</ul>
+
+<li><a name=clause120>Clause 120:</a> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_2081</span>),<span class="var">@19_svrEncHash_2082</span>,<span class="var">@19_svrAppData_2083</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2448</span>))) <span class="conn">&amp;&amp;</span> <span class="pred">begin</span>(<span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2446</span>),<span class="var">someAuls_2085</span>), <span class="var">@19_svrLocAttRep</span> = <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_2081</span>),<span class="var">@19_svrEncHash_2082</span>,<span class="var">@19_svrAppData_2083</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2448</span>)), <span class="var">someAuls</span> = <span class="var">someAuls_2085</span>, <span class="var">@sid_1743</span> = <span class="var">@sid_2086</span>, <span class="var">@sid_1134</span> = <span class="var">@sid_2084</span>, <span class="var">@occ39</span> = <span class="fun">@occ_cst</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">someAuls_2085</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="fun"></span>(<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2446</span>),<span class="var">someAuls_2085</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">enclaveEcKey1_2447</span>),<span class="var">@13_x_2081</span>)),<span class="var">@9_r_2449</span>))<br>
+<span class="explain">(If the message <span class="var">someAuls_2085</span> is received from the attacker at input <a href="process_0.html#occ36" target="process" class="occ">{36}</a>,<br>
+event <span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2446</span>),<span class="var">someAuls_2085</span>) is executed at <a href="process_0.html#occ39" target="process" class="occ">{39}</a>,<br>
+the message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_2081</span>),<span class="var">@19_svrEncHash_2082</span>,<span class="var">@19_svrAppData_2083</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2448</span>)) is received from the attacker at input <a href="process_0.html#occ42" target="process" class="occ">{42}</a>,<br>
+then the message <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2446</span>),<span class="var">someAuls_2085</span>),<span class="fun"></span>(<span class="fun">false</span>,<span class="fun">zero_nonce</span>),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">enclaveEcKey1_2447</span>),<span class="var">@13_x_2081</span>)),<span class="var">@9_r_2449</span>) may be sent to the attacker at output <a href="process_0.html#occ49" target="process" class="occ">{49}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">enclaveKeySeed_2446</span> <span class="conn">=</span> <span class="name">enclaveKeySeed</span>[someAuls = <span class="var">someAuls_2085</span>,!2 = <span class="var">@sid_2086</span>,!1 = <span class="var">@sid_2084</span>]
+<li><span class="var">enclaveEcKey1_2447</span> <span class="conn">=</span> <span class="name">enclaveEcKey1</span>[someAuls = <span class="var">someAuls_2085</span>,!2 = <span class="var">@sid_2086</span>,!1 = <span class="var">@sid_2084</span>]
+<li><span class="var">localRepKey_2448</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_2084</span>]
+<li><span class="var">@9_r_2449</span> <span class="conn">=</span> <span class="name">@9_r_126</span>[@19_svrLocAttRep = <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_2081</span>),<span class="var">@19_svrEncHash_2082</span>,<span class="var">@19_svrAppData_2083</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2448</span>)),someAuls = <span class="var">someAuls_2085</span>,!2 = <span class="var">@sid_2086</span>,!1 = <span class="var">@sid_2084</span>]
+</ul>
+
+<li><a name=clause121>Clause 121:</a> <span class="pred">attacker</span>(<span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@19_svrCert_2168</span>,<span class="var">@19_appCert_2169</span>),<span class="fun"></span>(<span class="fun">true</span>,<span class="fun">IncrNonce</span>(<span class="fun">zero_nonce</span>)),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">enclaveEcKey1_2451</span>),<span class="var">@13_x_2173</span>)),<span class="var">@9_r_2174</span>)) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_2173</span>),<span class="var">@19_svrEncHash_2175</span>,<span class="var">@19_svrAppData_2176</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2452</span>))) <span class="conn">&amp;&amp;</span> <span class="pred">begin</span>(<span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2450</span>),<span class="var">someAuls_2170</span>), <span class="var">@19_appCertCipher</span> = <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@19_svrCert_2168</span>,<span class="var">@19_appCert_2169</span>),<span class="fun"></span>(<span class="fun">true</span>,<span class="fun">IncrNonce</span>(<span class="fun">zero_nonce</span>)),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">enclaveEcKey1_2451</span>),<span class="var">@13_x_2173</span>)),<span class="var">@9_r_2174</span>), <span class="var">@19_svrLocAttRep</span> = <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_2173</span>),<span class="var">@19_svrEncHash_2175</span>,<span class="var">@19_svrAppData_2176</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2452</span>)), <span class="var">someAuls</span> = <span class="var">someAuls_2170</span>, <span class="var">@sid_1743</span> = <span class="var">@sid_2171</span>, <span class="var">@sid_1134</span> = <span class="var">@sid_2172</span>, <span class="var">@occ39</span> = <span class="fun">@occ_cst</span>) <span class="conn">&amp;&amp;</span> <span class="pred">attacker</span>(<span class="var">someAuls_2170</span>) <span class="conn">-&gt;</span> <span class="pred">attacker</span>(<span class="fun"></span>(<span class="fun"></span>(<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>)),<span class="fun">sign</span>(<span class="fun"></span>(<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>)),<span class="fun">sskgen</span>(<span class="var">enclaveKeySeed_2450</span>)),<span class="var">@19_svrCert_2168</span>,<span class="var">@19_appCert_2169</span>))<br>
+<span class="explain">(If the message <span class="var">someAuls_2170</span> is received from the attacker at input <a href="process_0.html#occ36" target="process" class="occ">{36}</a>,<br>
+event <span class="fun">DecentAppInit</span>(<span class="fun">enclaveA</span>,<span class="fun">spkgen</span>(<span class="var">enclaveKeySeed_2450</span>),<span class="var">someAuls_2170</span>) is executed at <a href="process_0.html#occ39" target="process" class="occ">{39}</a>,<br>
+the message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">@13_x_2173</span>),<span class="var">@19_svrEncHash_2175</span>,<span class="var">@19_svrAppData_2176</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2452</span>)) is received from the attacker at input <a href="process_0.html#occ42" target="process" class="occ">{42}</a>,<br>
+the message <span class="fun">enc_r</span>(<span class="fun"></span>(<span class="var">@19_svrCert_2168</span>,<span class="var">@19_appCert_2169</span>),<span class="fun"></span>(<span class="fun">true</span>,<span class="fun">IncrNonce</span>(<span class="fun">zero_nonce</span>)),<span class="fun">EcDiHeToKey</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">enclaveEcKey1_2451</span>),<span class="var">@13_x_2173</span>)),<span class="var">@9_r_2174</span>) is received from the attacker at input <a href="process_0.html#occ50" target="process" class="occ">{50}</a>,<br>
+then the message <span class="fun"></span>(<span class="fun"></span>(<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>)),<span class="fun">sign</span>(<span class="fun"></span>(<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>),<span class="fun">HashEnclave</span>(<span class="fun">enclaveD</span>)),<span class="fun">sskgen</span>(<span class="var">enclaveKeySeed_2450</span>)),<span class="var">@19_svrCert_2168</span>,<span class="var">@19_appCert_2169</span>) may be sent to the attacker at output <a href="process_0.html#occ52" target="process" class="occ">{52}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">enclaveKeySeed_2450</span> <span class="conn">=</span> <span class="name">enclaveKeySeed</span>[someAuls = <span class="var">someAuls_2170</span>,!2 = <span class="var">@sid_2171</span>,!1 = <span class="var">@sid_2172</span>]
+<li><span class="var">enclaveEcKey1_2451</span> <span class="conn">=</span> <span class="name">enclaveEcKey1</span>[someAuls = <span class="var">someAuls_2170</span>,!2 = <span class="var">@sid_2171</span>,!1 = <span class="var">@sid_2172</span>]
+<li><span class="var">localRepKey_2452</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_2172</span>]
+</ul>
+
+<li><a name=clause122>Clause 122:</a> <span class="pred">attacker</span>(<span class="var">malSvrKeyseed_2453</span>)<br>
+<span class="explain">(The message <span class="var">malSvrKeyseed_2453</span> may be sent to the attacker at output <a href="process_0.html#occ56" target="process" class="occ">{56}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">malSvrKeyseed_2453</span> <span class="conn">=</span> <span class="name">malSvrKeyseed</span>[!2 = <span class="var">@sid_2219</span>,!1 = <span class="var">@sid_2220</span>]
+</ul>
+
+<li><a name=clause123>Clause 123:</a> <span class="pred">attacker</span>(<span class="var">malSvrEcKey1_2454</span>)<br>
+<span class="explain">(The message <span class="var">malSvrEcKey1_2454</span> may be sent to the attacker at output <a href="process_0.html#occ57" target="process" class="occ">{57}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">malSvrEcKey1_2454</span> <span class="conn">=</span> <span class="name">malSvrEcKey1</span>[!2 = <span class="var">@sid_2222</span>,!1 = <span class="var">@sid_2223</span>]
+</ul>
+
+<li><a name=clause124>Clause 124:</a> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="fun">HashEnclave</span>(<span class="fun">malDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">malSvrKeyseed_2455</span>)),<span class="fun">sskgen</span>(<span class="fun">encPrvsKeySeed</span>)))<br>
+<span class="explain">(The message <span class="fun">sign</span>(<span class="fun">EnclaveQuoteSignin</span>(<span class="fun">HashEnclave</span>(<span class="fun">malDecentSvr</span>),<span class="fun">spkgen</span>(<span class="var">malSvrKeyseed_2455</span>)),<span class="fun">sskgen</span>(<span class="fun">encPrvsKeySeed</span>)) may be sent to the attacker at output <a href="process_0.html#occ59" target="process" class="occ">{59}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">malSvrKeyseed_2455</span> <span class="conn">=</span> <span class="name">malSvrKeyseed</span>[!2 = <span class="var">@sid_2255</span>,!1 = <span class="var">@sid_2256</span>]
+</ul>
+
+<li><a name=clause125>Clause 125:</a> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">malSvrEcKey1_2456</span>),<span class="fun">HashEnclave</span>(<span class="fun">malDecentSvr</span>),<span class="fun">emptyStr</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2457</span>)))<br>
+<span class="explain">(The message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">false</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">malSvrEcKey1_2456</span>),<span class="fun">HashEnclave</span>(<span class="fun">malDecentSvr</span>),<span class="fun">emptyStr</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2457</span>)) may be sent to the attacker at output <a href="process_0.html#occ61" target="process" class="occ">{61}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">malSvrEcKey1_2456</span> <span class="conn">=</span> <span class="name">malSvrEcKey1</span>[!2 = <span class="var">@sid_2300</span>,!1 = <span class="var">@sid_2301</span>]
+<li><span class="var">localRepKey_2457</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_2301</span>]
+</ul>
+
+<li><a name=clause126>Clause 126:</a> <span class="pred">attacker</span>(<span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">malSvrEcKey1_2458</span>),<span class="fun">HashEnclave</span>(<span class="fun">malDecentSvr</span>),<span class="fun">emptyStr</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2459</span>)))<br>
+<span class="explain">(The message <span class="fun">sign</span>(<span class="fun">LocAttRep</span>(<span class="fun">true</span>,<span class="fun">DiHeExp</span>(<span class="fun">DiHeValG</span>,<span class="var">malSvrEcKey1_2458</span>),<span class="fun">HashEnclave</span>(<span class="fun">malDecentSvr</span>),<span class="fun">emptyStr</span>),<span class="fun">sskgen</span>(<span class="var">localRepKey_2459</span>)) may be sent to the attacker at output <a href="process_0.html#occ63" target="process" class="occ">{63}</a>.)</span><br>
+Abbreviations:
+<ul>
+
+<li><span class="var">malSvrEcKey1_2458</span> <span class="conn">=</span> <span class="name">malSvrEcKey1</span>[!2 = <span class="var">@sid_2345</span>,!1 = <span class="var">@sid_2346</span>]
+<li><span class="var">localRepKey_2459</span> <span class="conn">=</span> <span class="name">localRepKey</span>[!1 = <span class="var">@sid_2346</span>]
+</ul>
+
+</ul>
+</body>
+</html>
